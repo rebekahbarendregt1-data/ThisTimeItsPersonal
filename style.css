@@ -1,0 +1,280 @@
+/*variables for colors and textures*/
+:root {  
+  --font: Impact, sans-serif;
+	--teal: #55bec2;
+	--light_teal: #0df7ff;
+	--blue: #39367d;
+	--light_blue: #392fff;
+	--purple: #a84a9c;
+	--light_purple: #ff04de;
+	--black_text_shadow:
+		0vw .2vw 0.5vw black,
+		0.2vw .2vw 0.5vw black;
+	
+	--color_text_shadow: 
+		-0.2vw -0.2vw 1vw var(--light_purple),
+    0.2vw 0.2vw 1vw var(--light_teal);
+	
+	--glow-text-shadow:
+    0 0 4vw #00F7FF; 
+}
+
+/*whole page settings*/
+html, body {
+	background: black;
+	overflow: hidden;
+	font-family: var(--font);
+}
+.whole_page {
+	background: radial-gradient(circle, #ff04de65, transparent 65%);
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height:100vh;
+	width:100vw;
+}
+
+.panel {
+	display: flex;
+  justify-items: center;
+  align-items: center;
+	box-sizing: border-box;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	mix-blend-mode: screen;
+}
+
+/*left panel*/
+.left_panel {
+	background: radial-gradient(ellipse closest-side, #4f46ee, transparent);
+	flex: 1;
+	width: 25vw;
+	align-content: center;
+	justify-items: center;
+	margin-left: 3vw;
+}
+
+/*left panel 1 (name inputs)*/
+.name_inputs {
+	width: min(40vw, 20vw);
+	display: block;
+	text-align: center;
+	font: 2vw var(--font);
+	color: white;
+	background-color: black;
+	margin: 1vw;
+	height: 2vw;
+	padding-bottom: 0.5vw;
+  border: .3vw solid var(--purple); 
+  border-radius: .2vw 1.5vw;
+	box-shadow: -1vw 1vw 3vw black;
+	transition: transform .2s ease-out;
+}
+input::placeholder{
+	color: var(--teal);
+	font-size: 1.5vw;
+}
+input:focus {
+	transform: scale(1.1);
+	background-color: var(--blue);
+}
+input:hover {
+	transform: scale(1.1);
+	background-color: var(--blue);
+}
+
+/*left panel 2 (title)*/
+#left_panel h1 span {
+  display: inline-block;
+}
+#left_panel .titleTeal,
+#left_panel .titleBlue {
+  font-size: 4vw;
+}
+#left_panel .titlePurple,
+#left_panel .titleEnd {
+  font-size: 7vw;
+}
+#left_panel .subTitle {
+  font-size: 3.5vw;
+}
+
+/*middle panel*/
+.middle_panel {
+	flex: 2;
+	align-content: center;
+	justify-items: center;
+}
+/*middle panel 1 (title)*/
+h1 {
+	text-align: center;
+	text-shadow:
+		0 0.2vw 0.5vw black,
+		0 -0.2vw 0.5vw black,
+		0.2vw 0 0.5vw black,
+		-0.2vw 0 0.5vw black,
+		0 0.3vw 0.6vw #ff04de,
+		0 -0.3vw 0.6vw #ff04de,
+		0.3vw 0 0.6vw #ff04de,
+		-0.3vw 0 0.6vw #ff04de,
+		0vw 0.7vw 6vw #ff04de20,
+		0vw -.7vw 6vw #ff04de20,
+		-.7vw 0vw 6vw #ff04de20,
+		.7vw 0vw 6vw #ff04de20;
+	filter: drop-shadow(1vw 1vw 1vw black);
+	line-height: 0.9;
+	transition: all .2s ease-out;	
+	.titleTeal {
+		color: var(--teal);
+		font-size: 6vw;
+	}
+	.titleBlue{
+		color: var(--blue);
+		font-size: 6vw;
+	}
+	.titlePurple{
+		color: var(--purple);
+		font-size: 11vw;
+	}
+	.titleEnd{
+		color:#39367d;
+		font-size: 11vw;
+	}
+	.subTitle {
+		display:block;
+		transform: rotate(-5deg);
+		color:white;
+		width: 30vw;
+		background-color: transparent;
+		font-size: 5vw;
+		text-shadow: var(--color_text_shadow);
+		outline: 4vw black;
+		-webkit-text-stroke: 0.01vw black;
+		} 
+}
+h1:hover{
+	transform: scale(1.1);
+	filter: drop-shadow(0 0 2vw black);
+	text-shadow: 0 4vw 4vw black;
+	cursor: pointer;
+}
+
+/*middle panel 2 (meme image)*/
+.memeImage {
+	max-height: 70vh;
+	max-width: 40vw;
+/* 	margin-bottom: 2vh; */
+	filter: drop-shadow(0 0 2vw purple);
+	box-shadow: 0 0 1vw white, 0 0 3vw var(--light_purple);
+  border-image: linear-gradient(to left, var(--teal), var(--blue)) 1 /5vw;
+	transition: filter 2s ease-in-out;
+	display: block;
+	z-index: -1;
+	margin-bottom: 3vw;
+}
+
+/*right panel*/
+.right_panel {
+	background: radial-gradient(ellipse closest-side, #46f9ff70, transparent);
+	flex: 1;
+	width: 25vw;
+	align-content: center;
+	justify-items: center;
+	margin-right: 3vw;
+}
+
+/*right panel 1 (upload and start button)*/
+.file {
+  opacity: 0;
+  width: 0.01vw;
+  height: 0.01vw;
+}
+.button{
+	margin: 0.5vw 0;
+	justify-content: center;
+	border-right: 0.6vw groove var(--purple);
+	border-left: 0.6vw ridge var(--purple);
+	border-bottom: 0.6vw groove var(--purple);
+	border-top: 0.6vw ridge var(--purple);
+	text-align: center;
+	padding: 0.5vw 2vw 1vw 2vw;
+	color: white;
+	width: clamp(5vw, 12vw, 15vw);
+	height: clamp(1vw, 2vw, 2.5vw);
+	font: 2vw var(--font);
+	font-size: clamp(1vw, 2vw, 5vw);
+	text-shadow: var(--black_text_shadow);
+	box-shadow: 0 0 4vw black;
+  border-radius: 5vw;
+  cursor: pointer;
+  transition: all .3s ease-out;
+	background: radial-gradient(var(--blue), black 70%);
+}
+.glowing_button {
+	margin: 1vw 0;
+	justify-content: center;
+	text-align: center;
+	padding: 1vw 2vw;
+	color: white;
+	width: clamp(2vw, 12vw, 15vw);
+	font: 2vw var(--font);
+	text-shadow: var(--black_text_shadow);
+  border-radius: 8vw;
+  cursor: pointer;
+  transition: all .3s ease-out;
+	animation: pulse-glow 0.8s infinite alternate;
+}
+@keyframes pulse-glow {
+  from {
+		border-right: 0.6vw groove var(--light_teal);
+		border-left: 0.6vw ridge var(--light_teal);
+		border-bottom: 0.6vw groove var(--light_teal);
+		border-top: 0.6vw ridge var(--light_teal);
+		box-shadow: 0 0 0.5vw white, 0 0 1vw var(--light_teal);
+		background: black;
+	}
+  to {
+		border-right: 0.6vw groove var(--light_purple);
+		border-left: 0.6vw ridge var(--light_purple);
+		border-bottom: 0.6vw groove var(--light_purple);
+		border-top: 0.6vw ridge var(--light_purple);
+		box-shadow: 0 0 1vw white, 0 0 3vw var(--light_purple);
+		background: var(--purple);
+	}
+}
+.glowing_button:hover {
+	transform: scale(1.1);
+}
+
+/*right panel 2 (player names and scores)*/
+.names {
+	display: block;
+	margin: 1vw;
+	justify-self: center;
+	border-right: 0.6vw groove var(--light_teal);
+	border-left: 0.6vw ridge var(--light_teal);
+	border-bottom: 0.6vw groove var(--light_teal);
+	border-top: 0.6vw ridge var(--light_teal);
+	box-shadow: 0 0 0.5vw white, 0 0 1vw var(--light_teal);
+	text-align: center;
+	padding: 1vw 2vw;
+	color: white;
+	width: clamp(20%, 65%, 75%);
+	height: clamp(10%, 20%, 25%);
+	font: 1.5vw var(--font);
+	text-shadow: var(--black_text_shadow);
+  border-radius: 5vw;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+	background: radial-gradient(circle, var(--teal), var(--blue) 50%);
+  box-shadow: 0 0 5vw var(--light_blue);
+}
+.names:hover {
+	transform: scale(1.1);
+	margin-right: 4vw;
+	box-shadow: 0 0 5vw var(--teal);
+	background: var(--blue);
+}

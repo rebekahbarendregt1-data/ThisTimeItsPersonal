@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>What do you Meme Family Edition</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <p><meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"></p>
+<body>
+	<!--whole page div block-->
+	<div
+			 id="whole_page"
+			 class = "whole_page">
+		<!--left panel (title)-->
+		<div 
+				 id="left_panel"
+				 class = "left_panel" "panel">
+			<div 
+					 id= "input_player_names">
+					<input
+							 type="text"
+							 class= "name_inputs"
+							 placeholder="Player 1..." >
+					<input
+							 type="text"
+							 class= "name_inputs"
+							 placeholder="Player 2..." >
+					<input
+							 type="text"
+							 class= "name_inputs"
+							 placeholder="Player 3..." >
+					<input
+							 type="text"
+							 class= "name_inputs"
+							 placeholder="Player 4..." >
+			</div>
+		</div>
+		<!--middle panel-->
+		<div 
+				id= "middle_panel"
+				class = "middle_panel" "panel"> 
+		<!--middle panel 1 (title)-->
+				<h1 id= "title"> 
+				<span class="titleTeal">WHAT DO</span>
+				<span class="titleBlue">YOU</span>
+				<br>
+				<span class="titlePurple">MEME</span>
+				<span class="titleEnd">?</span>
+				<br>
+				<span class="subTitle">THIS TIME IT'S PERSONAL</span>
+			</h1>
+		<!--middle panel 2 (meme image)-->
+				<img
+					 	id="memeImage"
+					 	class= "memeImage"
+					 	style = "display:none;">
+				<span
+						id= "next_meme_button"
+						class="button"
+						style= "display:none;"
+						>NEXT MEME</span>
+		</div>
+		<!--right panel -->
+		<div
+			id="right_panel"
+			class = "right_panel" "panel">
+		<!--*right panel 2 (names and scores)-->
+			<div id = "player_scores">
+				<input
+						type="file"
+						id="meme_uploads"
+						class="file"
+						accept="image/*"
+						style= "display:flex;"
+						multiple>
+				<label
+						id = "meme_upload_button"
+						class = "glowing_button" 
+						for="meme_uploads"
+						style= "display:flex;"
+						>UPLOAD MEMES</label>
+				<span
+						id="start_button"
+						class="button"
+						style= "display:flex;"
+						>START!</span>
+			</div>
+		</div>
+	</div>
+</body>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
