@@ -262,7 +262,7 @@ h1:hover{
 	text-align: center;
 	padding: 1vw 2vw;
 	color: white;
-	height: clamp(5%, 10%, 10%);
+	width: clamp(10%, 75%, 60%)
 	font: 1.5vw var(--font);
 	text-shadow: var(--black_text_shadow);
 	border-radius: 5vw;
