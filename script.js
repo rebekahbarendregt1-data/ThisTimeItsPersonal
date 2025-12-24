@@ -55,12 +55,11 @@ start_button.addEventListener("click", () => {
   if (start_button.classList.contains("glowing_button")) {
 
     players.forEach(name => {
+		scores[name] = 0;
       const el = document.createElement("span");
-			scores[name] = 0;
       el.textContent = name + ":   " + scores[name];
       el.classList.add("names");
       el.id = name;
-			el.style.width = String(90/players.length);
       scores_section.appendChild(el);
 
       // click name to add points
