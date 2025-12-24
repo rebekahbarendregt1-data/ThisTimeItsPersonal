@@ -34,7 +34,7 @@ function add_new_player(){
 	const new_player = document.createElement("input"); 
 	new_player.type= "text"; 
 	new_player.classList.add("name_inputs"); 
-	new_player.placeholder = "Player " + players.length + " ..."; 
+	new_player.placeholder = "Player " + (players.length +1) + " ..."; 
 	player_inputs.appendChild(new_player); 
 	new_player.focus();
 };
