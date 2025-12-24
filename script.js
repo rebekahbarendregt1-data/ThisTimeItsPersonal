@@ -34,7 +34,7 @@ function add_new_player(){
 	const new_player = document.createElement("input"); 
 	new_player.type= "text"; 
 	new_player.classList.add("name_inputs"); 
-	new_player.placeholder = "Player " + (players.length +1) + " ..."; 
+	new_player.placeholder = "Player " + (players.length + 1) + " ..."; 
 	player_inputs.appendChild(new_player); 
 	new_player.focus();
 };
@@ -60,6 +60,8 @@ start_button.addEventListener("click", () => {
       el.textContent = name + ":   " + scores[name];
       el.classList.add("names");
       el.id = name;
+			el.style.width = String(90/players.length);
+			el.style.fontSize = String(80/players.length);
       scores_section.appendChild(el);
 
       // click name to add points
