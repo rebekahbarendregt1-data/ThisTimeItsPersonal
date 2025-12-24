@@ -262,15 +262,14 @@ h1:hover{
 	text-align: center;
 	padding: 1vw 2vw;
 	color: white;
-	width: clamp(20%, 65%, 75%);
 	height: clamp(5%, 10%, 10%);
 	font: 1.5vw var(--font);
 	text-shadow: var(--black_text_shadow);
-  border-radius: 5vw;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
+	border-radius: 5vw;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
 	background: radial-gradient(circle, var(--teal), var(--blue) 50%);
-  box-shadow: 0 0 5vw var(--light_blue);
+	box-shadow: 0 0 5vw var(--light_blue);
 }
 .names:hover {
 	transform: scale(1.1);
