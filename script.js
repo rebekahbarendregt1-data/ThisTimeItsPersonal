@@ -70,7 +70,6 @@ start_button.addEventListener("click", () => {
         scores[name] += 1;
 				next_meme.classList = "glowing_button";
         el.textContent = name + ":   " + scores[name];
-				el.style.background = "#ff04de";
       });
     });
 
