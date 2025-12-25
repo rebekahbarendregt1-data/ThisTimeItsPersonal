@@ -68,7 +68,7 @@ start_button.addEventListener("click", () => {
       el.addEventListener("click", () => {
         scores[name] += 1;
         el.textContent = name + ":   " + scores[name];
-				el.style.background = 
+				el.style.background = "#ff04de";
       });
     });
 
