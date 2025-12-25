@@ -60,13 +60,15 @@ start_button.addEventListener("click", () => {
       el.textContent = name + ":   " + scores[name];
       el.classList.add("names");
       el.id = name;
-			el.style.height = String(80/players.length + "%");
-			el.style.fontSize = String(90/players.length + "%");
+			const height_name = 70/players.length
+			el.style.height = String(height_name + "vh");
+			el.style.fontSize = String(height_name*0.8 + "vh");
       scores_section.appendChild(el);
 
       // click name to add points
       el.addEventListener("click", () => {
         scores[name] += 1;
+				next_meme.classList = "glowing_button";
         el.textContent = name + ":   " + scores[name];
 				el.style.background = "#ff04de";
       });
@@ -97,4 +99,5 @@ document.getElementById("next_meme_button").addEventListener("click", () => {
 	const meme = document.getElementById("memeImage");
   meme.src = randomMeme;
 	memes.splice(memes.indexOf(randomMeme),1);
+	next_meme.classList = "button";
 });
