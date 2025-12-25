@@ -274,8 +274,7 @@ h1:hover{
 	box-shadow: 0 0 5vw var(--light_blue);
 }
 .names:hover {
-	transform: scale(1.1);
 	margin-right: 4vw;
 	box-shadow: 0 0 5vw var(--teal);
-	background: var(--blue);
+	background: var(--purple);
 }
