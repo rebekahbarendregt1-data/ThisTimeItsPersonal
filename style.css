@@ -122,10 +122,10 @@ h1 {
 		0 -0.3vw 0.6vw #ff04de,
 		0.3vw 0 0.6vw #ff04de,
 		-0.3vw 0 0.6vw #ff04de,
-		0vw 0.7vw 6vw #ff04de20,
-		0vw -.7vw 6vw #ff04de20,
-		-.7vw 0vw 6vw #ff04de20,
-		.7vw 0vw 6vw #ff04de20;
+		0vw 0.7vw 2vw #ff04de20,
+		0vw -.7vw 2vw #ff04de20,
+		-.7vw 0vw 2vw #ff04de20,
+		.7vw 0vw 2vw #ff04de20;
 	filter: drop-shadow(1vw 1vw 1vw black);
 	line-height: 0.9;
 	transition: all .2s ease-out;	
