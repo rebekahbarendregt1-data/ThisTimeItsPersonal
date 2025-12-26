@@ -262,9 +262,9 @@ h1:hover{
 	border-top: 0.6vw ridge var(--light_teal);
 	box-shadow: 0 0 0.5vw white, 0 0 1vw var(--light_teal);
 	text-align: center;
-	padding: 0.5vw 2vw;
+	padding: 0.5vw 1vw;
 	color: white;
-	width: clamp(10%, 75%, 85%);
+	width: clamp(30%, 75%, 85%);
 	text-shadow: var(--black_text_shadow);
 	border-radius: 5vw;
 	cursor: pointer;
