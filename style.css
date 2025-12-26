@@ -254,7 +254,7 @@ h1:hover{
 /*right panel 2 (player names and scores)*/
 .names {
 	display: block;
-	margin: 1vw;
+	margin: 0.8vw;
 	justify-self: center;
 	border-right: 0.6vw groove var(--light_teal);
 	border-left: 0.6vw ridge var(--light_teal);
@@ -262,7 +262,7 @@ h1:hover{
 	border-top: 0.6vw ridge var(--light_teal);
 	box-shadow: 0 0 0.5vw white, 0 0 1vw var(--light_teal);
 	text-align: center;
-	padding: 1vw 2vw;
+	padding: 0.5vw 2vw;
 	color: white;
 	width: clamp(10%, 75%, 85%);
 	text-shadow: var(--black_text_shadow);
