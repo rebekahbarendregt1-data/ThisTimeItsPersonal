@@ -265,7 +265,6 @@ h1:hover{
 	padding: 1vw 2vw;
 	color: white;
 	width: clamp(10%, 75%, 85%);
-	font: 2.0vw var(--font);
 	text-shadow: var(--black_text_shadow);
 	border-radius: 5vw;
 	cursor: pointer;
