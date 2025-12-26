@@ -60,9 +60,9 @@ start_button.addEventListener("click", () => {
       el.textContent = name + ":   " + scores[name];
       el.classList.add("names");
       el.id = name;
-			const height_name = 50/players.length
-			el.style.height = String(height_name + "vh");
-			el.style.fontSize = String(height_name/2 + "vh");
+			const height_name = 30/players.length
+			el.style.height = String(height_name) + "vh";
+			el.style.fontSize = String(height_name/2) + "vh";
       scores_section.appendChild(el);
 
       // click name to add points
