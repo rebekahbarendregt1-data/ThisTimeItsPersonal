@@ -18,7 +18,7 @@
 }
 
 /*whole page settings*/
-body {
+html, body {
   background: black;
   overflow: hidden;
   font-family: var(--font);
